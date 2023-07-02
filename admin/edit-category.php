@@ -1,8 +1,8 @@
 <?php
 
-
-include('includes/header.php');
 include('../middleware/adminMiddleware.php');
+include('includes/header.php');
+
 
 ?>
 <div class="container">
@@ -20,7 +20,7 @@ include('../middleware/adminMiddleware.php');
              ?>
              <div class="card">
                 <div class="card-header">
-                    <h4>Edit Category</h4>
+                    <h4>Edit Category <a href="category.php"class='btn btn-primary float-end'>Back</a></h4>
                 </div>
                 <div class="card-body">
                     <form action="code.php" method="POST" enctype="multipart/form-data">
@@ -44,7 +44,7 @@ include('../middleware/adminMiddleware.php');
                                 <input type="file" name="image" class="form-control">
                                 <label for="">Current Image</label>
                                 <input type="hidden" name="old_image" value="<?= $data['image']?>" >
-                                <img src="../uploads/<?= $data['image']?>" height="50px" width="50px" alt="">
+                                <img src="../uploads/<?= $data['image']?>" height="50px" width="50px" alt="Category Image">
                             </div>
                             <div class="col-md-12">
                                 <label for="">Meta Title</label>

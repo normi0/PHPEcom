@@ -1,8 +1,8 @@
 <?php
 
-
-include('includes/header.php');
 include('../middleware/adminMiddleware.php');
+include('includes/header.php');
+
 
 ?>
 <div class="container">
@@ -10,9 +10,9 @@ include('../middleware/adminMiddleware.php');
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                   <h4>
-                   Categories
-                   </h4> 
+                    <h4>
+                        Producst
+                    </h4>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
@@ -28,10 +28,10 @@ include('../middleware/adminMiddleware.php');
                         </thead>
                         <tbody>
                             <?php
-                            $category = getAll("categories");
+                            $products = getAll("products");
 
-                            if (mysqli_num_rows($category) > 0) {
-                                foreach ($category as $item) {
+                            if (mysqli_num_rows($products) > 0) {
+                                foreach ($products as $item) {
                                     ?>
                                     <tr>
                                         <td>
@@ -41,20 +41,17 @@ include('../middleware/adminMiddleware.php');
                                             <?= $item['name']; ?>
                                         </td>
                                         <td>
-                                            <img src="../uploads/<?= $item['image'] ?>" width="50px" height="50px" alt="<?= $item['name']; ?>">
+                                            <img src="../uploads/<?= $item['image'] ?>" width="50px" height="50px"
+                                                alt="<?= $item['name']; ?>">
                                         </td>
                                         <td>
-                                            <?= $item['status'] == '0'? "Visible":"Hiden" ?>
+                                            <?= $item['status'] == '0' ? "Visible" : "Hiden" ?>
                                         </td>
                                         <td>
-                                            <a href="edit-category.php?id=<?= $item['id']; ?>" class="btn btn-primary">Edit</a>
-                                            
+                                            <a href="edit-product.php?id=<?= $item['id']; ?>" class="btn btn-primary">Edit</a>
+                                        <td>      
+                                                <button type="button" class="btn btn-danger delete_product_btn " value ="<?=$item['id'];?>">Delete</button>
                                         </td>
-                                        <td>
-                                         <form action="code.php" method="POST">
-                                            <input type="hidden" name="category_id" value="<?= $item['id']; ?>">
-                                             <button type= "submit" class="btn btn-danger" name= "delete_category_btn">Delete</button>
-                                            </form>
                                         </td>
                                     </tr>
                                     <?php

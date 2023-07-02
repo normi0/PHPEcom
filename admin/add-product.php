@@ -35,16 +35,18 @@ include('../middleware/adminMiddleware.php');
                             </div>
                             <div class="col-md-6">
                                 <label class="mb-0">Name</label>
-                                <input type="text" required name="name" placeholder="Enter Category Name" class="form-control mb-2">
+                                <input type="text" required name="name" placeholder="Enter Category Name"
+                                    class="form-control mb-2">
                             </div>
                             <div class="col-md-6">
                                 <label class="mb-0">Slug</label>
-                                <input type="text" required name="slug" placeholder="Enter Slug" class="form-control mb-2">
+                                <input type="text" required name="slug" placeholder="Enter Slug"
+                                    class="form-control mb-2">
                             </div>
                             <div class="col-md-12">
-                                <label class="mb-0">Small  Description</label>
-                                <textarea rows="3" required name="small_description" placeholder="Enter Small Description"
-                                    class="form-control mb-2"></textarea>
+                                <label class="mb-0">Small Description</label>
+                                <textarea rows="3" required name="small_description"
+                                    placeholder="Enter Small Description" class="form-control mb-2"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Description</label>
@@ -53,29 +55,32 @@ include('../middleware/adminMiddleware.php');
                             </div>
                             <div class="col-md-6">
                                 <label class="mb-0">Original Price</label>
-                                <input type="text" required name="original_price" placeholder="Enter Original Price" class="form-control mb-2">
+                                <input type="text" required name="original_price" placeholder="Enter Original Price"
+                                    class="form-control mb-2">
                             </div>
                             <div class="col-md-6">
                                 <label class="mb-0">Seling Price</label>
-                                <input type="text" required name="selling_price" placeholder="Seling Price" class="form-control mb-2">
+                                <input type="text" required name="selling_price" placeholder="Seling Price"
+                                    class="form-control mb-2">
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Upload Image</label>
                                 <input type="file" required name="image" class="form-control mb-2">
                             </div>
                             <div class="row">
-                            <div class="col-md-6">
-                                <label class="mb-0">Quantity</label>
-                                <input type="number" required name="qty" placeholder="Enter Quantity" class="form-control mb-2">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="mb-0">Status</label><br>
-                                <input type="checkbox" name="Status">
-                            </div>
-                            <div class="col-md-3">
-                                <label class="mb-0">Trending</label><br>
-                                <input type="checkbox" name="trending">
-                            </div>
+                                <div class="col-md-6">
+                                    <label class="mb-0">Quantity</label>
+                                    <input type="number" required name="qty" placeholder="Enter Quantity"
+                                        class="form-control mb-2">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="mb-0">Status</label><br>
+                                    <input type="checkbox" name="Status">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="mb-0">Trending</label><br>
+                                    <input type="checkbox" name="trending">
+                                </div>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Meta Title</label>
@@ -92,7 +97,7 @@ include('../middleware/adminMiddleware.php');
                                 <textarea rows="3" required name="meta_keywords" placeholder="Enter Meta Keywords"
                                     class="form-control mb-2"></textarea>
                             </div>
-                           
+
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary" name="add_product_btn">Save</button>
                             </div>

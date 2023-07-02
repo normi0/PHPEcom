@@ -22,10 +22,11 @@
   </div>
 </footer>
 </main>
-
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
 <script src="../assets/js/core/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/perfect-scrollbar.min.js"></script>
 <script src="../assets/js/smooth-scrollbar.min.js"></script>
+<script src="../assets/js/custom.js"></script>
 <!-- Alertify JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 <script>
